@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Yaquoi",
+    "version": "0.0",
+  
+    "description": "Detecte la présence de CMS.",
+  
+    "icons": {
+      "48": "./assets/icons/yaquoi-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["./assets/scripts/yaquoi.js"]
+      }
+    ]
+}
